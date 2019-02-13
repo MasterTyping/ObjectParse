@@ -31,10 +31,10 @@ public class ModelManager : MonoBehaviour {
     {
         public ModelData[] ModelList;
     }
-    public List<ModelData> DataList;
-    public List<GameObject> OriginList;
-    public ModelDataList ModelList;
-    public GameObject Prefab;
+    public static List<ModelData> DataList;
+    public static List<GameObject> OriginList;
+    public static ModelDataList ModelList;
+    public static GameObject Prefab;
     OpenFileDialog Dialog;
     string Savepath;
     string path;
@@ -184,7 +184,7 @@ public class ModelManager : MonoBehaviour {
     public void LoadOriginObj()
     {
 
-        GameObject Model = OBJLoader.LoadOBJFile(Dialog.path);
+        GameObject Model = ModelLoader.SetObject();
         var info = new FileInfo(Dialog.path);
         Model.transform.localPosition = new Vector3(0, 500, -490);
         Model.transform.localRotation = Quaternion.Euler(-90.0f, 0.0f, 0.0f);

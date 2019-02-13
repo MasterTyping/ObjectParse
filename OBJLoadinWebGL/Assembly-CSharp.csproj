@@ -62,12 +62,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\KeyManager.cs" />
+    <Compile Include="Assets\ModelLoader.cs" />
     <Compile Include="Assets\ModelManager.cs" />
-    <Compile Include="Assets\MTOBJLoader.cs" />
-    <Compile Include="Assets\ObjectController.cs" />
+    <Compile Include="Assets\MTextureLoader.cs" />
     <Compile Include="Assets\OBJImport\OBJLoader.cs" />
     <Compile Include="Assets\OBJImport\TextureLoader.cs" />
     <Compile Include="Assets\OpenFileDialog.cs" />
+    <Compile Include="Assets\PropertyController.cs" />
     <Compile Include="Assets\transformModel.cs" />
     <Compile Include="Assets\UpdateDebugText.cs" />
     <Compile Include="Assets\UpdateModelList.cs" />
